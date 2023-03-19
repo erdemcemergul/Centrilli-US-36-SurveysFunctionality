@@ -1,13 +1,13 @@
 node {
     stage('Clone code') {
-        git 'https://github.com/mehmetCt/demo-project.git'
+        git 'https://github.com/erdemcemergul/Centrilli-US-36-SurveysFunctionality.git'
     }
 
     stage('Run tests'){
         if(isUnix()){
             sh "mvn clean test"
         } else {
-            bat "mvn clean test -Dcucumber.filter.tags=\"@regression\" "
+            bat "mvn clean test -Dcucumber.filter.tags=\"@surveys\" "
         }
 
     }
