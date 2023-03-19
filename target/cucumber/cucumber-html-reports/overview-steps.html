@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>No Name (add projectName to cucumber-reporting.properties)</td>
+      <td>19 Mar 2023, 16:51</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_click_the_create_button()</td>
+              <td>7</td>
+              <td class="duration" data-value="5069415657">5.069</td>
+              <td class="duration" data-value="5069415657">5.086</td>
+              <td class="duration" data-value="35485909600">35.485</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_click_the_discard_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="5079562100">5.079</td>
+              <td class="duration" data-value="5079562100">5.079</td>
+              <td class="duration" data-value="5079562100">5.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_click_the_kanban_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="4119405700">4.119</td>
+              <td class="duration" data-value="4119405700">4.119</td>
+              <td class="duration" data-value="4119405700">4.119</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_click_the_list_button()</td>
+              <td>3</td>
+              <td class="duration" data-value="11179630200">11.179</td>
+              <td class="duration" data-value="11179630200">11.183</td>
+              <td class="duration" data-value="33538890600">33.538</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_click_the_save_button()</td>
+              <td>5</td>
+              <td class="duration" data-value="5136781380">5.136</td>
+              <td class="duration" data-value="5136781380">5.159</td>
+              <td class="duration" data-value="25683906900">25.683</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_is_on_the_surveys_module_page_of_web_table_app()</td>
+              <td>9</td>
+              <td class="duration" data-value="15927399277">15.927</td>
+              <td class="duration" data-value="15927399277">17.781</td>
+              <td class="duration" data-value="143346593500">2:23.346</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_should_cancel_the_process()</td>
+              <td>1</td>
+              <td class="duration" data-value="29919200">0.029</td>
+              <td class="duration" data-value="29919200">0.029</td>
+              <td class="duration" data-value="29919200">0.029</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_should_create_a_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="60991500">0.060</td>
+              <td class="duration" data-value="60991500">0.060</td>
+              <td class="duration" data-value="60991500">0.060</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_should_find_the_new_created_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="44757600">0.044</td>
+              <td class="duration" data-value="44757600">0.044</td>
+              <td class="duration" data-value="44757600">0.044</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_should_not_create_a_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="67408200">0.067</td>
+              <td class="duration" data-value="67408200">0.067</td>
+              <td class="duration" data-value="67408200">0.067</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_should_see_survey_created_message_is_displayed_at_the_bottom_of_the_page_after_creating_a_new_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="37131300">0.037</td>
+              <td class="duration" data-value="37131300">0.037</td>
+              <td class="duration" data-value="37131300">0.037</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_should_see_the_data_like_as_kanban_type()</td>
+              <td>1</td>
+              <td class="duration" data-value="57960000">0.057</td>
+              <td class="duration" data-value="57960000">0.057</td>
+              <td class="duration" data-value="57960000">0.057</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_should_see_the_data_like_as_list_type()</td>
+              <td>1</td>
+              <td class="duration" data-value="36386000">0.036</td>
+              <td class="duration" data-value="36386000">0.036</td>
+              <td class="duration" data-value="36386000">0.036</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_should_see_the_number_of_surveys_increased()</td>
+              <td>1</td>
+              <td class="duration" data-value="10176685600">10.176</td>
+              <td class="duration" data-value="10176685600">10.176</td>
+              <td class="duration" data-value="10176685600">10.176</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_should_see_the_page_title_is_changed_to_the_new_survey_name_after_user_create_the_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="36658100">0.036</td>
+              <td class="duration" data-value="36658100">0.036</td>
+              <td class="duration" data-value="36658100">0.036</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_write_any_on_title_label(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="60368575">0.060</td>
+              <td class="duration" data-value="60368575">0.066</td>
+              <td class="duration" data-value="241474300">0.241</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Centrilli_StepDefinition.user_write_new_created_under_permanent_survey_list_by_using_search_box(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3134854500">3.134</td>
+              <td class="duration" data-value="3134854500">3.134</td>
+              <td class="duration" data-value="3134854500">3.134</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.cydeo.step_definition.Hooks.teardownScenario(io.cucumber.java.Scenario)</td>
+              <td>9</td>
+              <td class="duration" data-value="687688988">0.687</td>
+              <td class="duration" data-value="687688988">0.740</td>
+              <td class="duration" data-value="6189200900">6.189</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>49</td>
+            <td class="duration">5.456</td>
+            <td class="duration">2:23.346</td>
+            <td class="duration">4:27.367</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
