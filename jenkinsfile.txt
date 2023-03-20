@@ -1,0 +1,25 @@
+node {
+    stage('Clone code') {
+        git 'https://github.com/erdemcemergul/Centrilli-US-36-SurveysFunctionality.git'
+    }
+
+    stage('Run tests'){
+        if(isUnix()){
+            sh "mvn clean test"
+        } else {
+            bat "mvn clean test -Dcucumber.filter.tags=\"@surveys\" "
+        }
+
+    }
+
+    stage('Generate report'){
+           cucumber failedFeaturesNumber: -1,
+            failedScenariosNumber: -1,
+            failedStepsNumber: -1,
+            fileIncludePattern: '**/*.json',
+            pendingStepsNumber: -1,
+            skippedStepsNumber: -1,
+            sortingMethod: 'ALPHABETICAL',
+            undefinedStepsNumber: -1
+    }
+}
