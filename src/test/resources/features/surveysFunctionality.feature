@@ -6,6 +6,8 @@ Feature: Verify the Surveys Functionality
 
   Scenario: Verify that user can create a survey
     When user click the Create Button
+    And user write any "title" on Title label
+    And user click the Save Button
     Then user should create a survey
 
   Scenario: Verify that user cannot create a survey without typing title (empty title)
@@ -21,6 +23,9 @@ Feature: Verify the Surveys Functionality
   Scenario: Verify that page title is changed to the new survey name after user create the survey
     When user click the Create Button
     And user write any "title" on Title label
+    And user click the Save Button
+    And user click the Edit Button
+    And user write any "new title" on Title label
     And user click the Save Button
     Then user should see the page title is changed to the new survey name after user create the survey
 

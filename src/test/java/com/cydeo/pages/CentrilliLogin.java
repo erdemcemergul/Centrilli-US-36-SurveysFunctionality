@@ -47,11 +47,6 @@ public class CentrilliLogin {
         if (module.isDisplayed())
             module.click();
         else if(!module.isDisplayed()) {
-         /*   Select select = new Select(dropdown);
-            List<WebElement> options = select.getOptions();
-            for (WebElement option : options) {
-                if (option.getText().equals("Surveys"))
-                    option.click();*/
             dropdown.click();
             Thread.sleep(1500);
             module.click();

@@ -6,8 +6,6 @@ import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,13 +16,11 @@ public class Centrilli_StepDefinition {
     public String expect ="";
     public String expect2 ="";
     public boolean expect3=false;
-   
-
 
     CentrilliLogin login=new CentrilliLogin();
     CentrilliSurveysPage surveys=new CentrilliSurveysPage();
     private int limit;
-
+    WebElement waitwrite= surveys.write;
     @Given("user is on the surveys module page of web table app")
     public void user_is_on_the_surveys_module_page_of_web_table_app() throws InterruptedException {
         Driver.getDriver().get(ConfigurationReader.getProperty("centrilli.url"));
@@ -44,13 +40,17 @@ public class Centrilli_StepDefinition {
         Thread.sleep(5000);
     }
     @When("user write any {string} on Title label")
-    public void user_write_any_on_title_label(String string) {
+    public void user_write_any_on_title_label(String string) throws InterruptedException {
+        surveys.write.click();
+        wait.until(ExpectedConditions.visibilityOf(waitwrite));
+        surveys.write.clear();
+        wait.until(ExpectedConditions.visibilityOf(waitwrite));
    surveys.write.sendKeys(string);
    expect =string;
     }
     @When("user click the Save Button")
     public void user_click_the_save_button() throws InterruptedException {
-        WebElement waitwrite= surveys.write;
+       // WebElement waitwrite= surveys.write;
         wait.until(ExpectedConditions.visibilityOf(waitwrite));
         expect2=surveys.write.getAttribute("class");
         surveys.saveSurvey();
@@ -58,13 +58,13 @@ public class Centrilli_StepDefinition {
     }
     @Then("user should create a survey")
     public void user_should_create_a_survey() {
-        boolean actual=surveys.save.isDisplayed();
+        boolean actual=surveys.edit.isDisplayed();
         Assert.assertTrue(actual);
     }
 
     @Then("user should not create a survey")
     public void user_should_not_create_a_survey() {
-        WebElement waitwrite= surveys.write;
+       // WebElement waitwrite= surveys.write;
         wait.until(ExpectedConditions.visibilityOf(waitwrite));
         //WebElement input = driver.findElement(By.xpath("//form[@id='input-example']/input"));
 
@@ -87,17 +87,12 @@ public class Centrilli_StepDefinition {
 
 
 
-    @When("user click Edit Button")
-    public void user_click_edit_button() throws InterruptedException {
+    @When("user click the Edit Button")
+    public void user_click_the_edit_button() throws InterruptedException {
     surveys.editSurvey();
     Thread.sleep(3000);
     }
-    @When("user write different {string} on Title label")
-    public void user_write_different_on_title_label(String string) {
-        surveys.write.sendKeys(Keys.CLEAR);
-        surveys.write.sendKeys(string);
-        expect=string;
-    }
+
     @Then("user should see the page title is changed to the new survey name after user create the survey")
     public void user_should_see_the_page_title_is_changed_to_the_new_survey_name_after_user_create_the_survey() {
         String actual=surveys.title.getText();
@@ -113,9 +108,6 @@ public class Centrilli_StepDefinition {
         String actual=surveys.message.getText();
         Assert.assertEquals(expect,actual);
     }
-
-
-
 
 
     @When("user click the List button")
