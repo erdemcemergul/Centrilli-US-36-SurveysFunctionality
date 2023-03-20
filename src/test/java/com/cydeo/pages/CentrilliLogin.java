@@ -5,16 +5,19 @@ import com.cydeo.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static com.cydeo.utilities.Driver.driverPool;
 
 public class CentrilliLogin {
 
-    public CentrilliLogin(){
+    public CentrilliLogin() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
     @FindBy(xpath = "//input[@id='login']")
     public WebElement inputUsername;
 
@@ -23,20 +26,36 @@ public class CentrilliLogin {
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginButton;
-    @FindBy(xpath = "//*[@id=\"oe_main_menu_navbar\"]/div[2]/ul[1]/li[15]/a/span")
+    @FindBy(xpath = "(//a[@class='oe_menu_toggler'])[11]")
     public WebElement module;
+    @FindBy(xpath = "(//a[@class='dropdown-toggle'])[1]")
+    public WebElement dropdown;
 
 
 
 
-    public void loginWithConfig(){
+
+    public void loginWithConfig() {
         inputUsername.sendKeys(ConfigurationReader.getProperty("centrilli.username"));
         inputPassword.sendKeys(ConfigurationReader.getProperty("centrilli.password"));
         loginButton.click();
 
     }
-    public void enterSurveys(){
-        module.click();
 
+    public void enterSurveys() throws InterruptedException {
+
+        if (module.isDisplayed())
+            module.click();
+        else if(!module.isDisplayed()) {
+         /*   Select select = new Select(dropdown);
+            List<WebElement> options = select.getOptions();
+            for (WebElement option : options) {
+                if (option.getText().equals("Surveys"))
+                    option.click();*/
+            dropdown.click();
+            Thread.sleep(1500);
+            module.click();
+
+            }
+        }
     }
-}

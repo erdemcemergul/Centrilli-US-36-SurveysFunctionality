@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>19 Mar 2023, 16:51</td>
+      <td>20 Mar 2023, 01:26</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Verify the Surveys Functionality</td>
-          <td      class="passed"    >40</td>
           <td >0</td>
-          <td >0</td>
+          <td      class="failed"    >9</td>
+          <td     class="skipped"   >31</td>
           <td >0</td>
           <td >0</td>
           <td class="total">40</td>
 
-          <td  class="passed"    >9</td>
           <td >0</td>
+          <td  class="failed"    >9</td>
           <td class="total">9</td>
 
-          <td class="duration" data-value="261178494700">4:21.178</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="23701100400">23.701</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Verify the Surveys Functionality</span>
 
@@ -191,12 +191,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">17.781</span>
+  <span class="lead-duration duration">12.936</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">user is log on the home page</span>
 
@@ -207,16 +207,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -226,15 +226,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is on the surveys module page of web table app</span>
 
-  <span class="lead-duration duration">17.781</span>
+  <span class="lead-duration duration">12.936</span>
 
 </div>
 
@@ -242,6 +242,25 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>org.openqa.selenium.support.ui.UnexpectedTagNameException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;a&quot;
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:48)
+	at com.cydeo.pages.CentrilliLogin.enterSurveys(CentrilliLogin.java:50)
+	at com.cydeo.step_definition.Centrilli_StepDefinition.user_is_on_the_surveys_module_page_of_web_table_app(Centrilli_StepDefinition.java:35)
+	at &#10045;.user is on the surveys module page of web table app(file:///C:/Users/erdem/OneDrive/Desktop/Project%20Centrilli/Centrilli-US-36-SurveysFunctionality/src/test/resources/features/surveysFunctionality.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -274,12 +293,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">5.128</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify that user can create a survey</span>
 
@@ -290,16 +309,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-4" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -309,15 +328,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user click the Create Button</span>
 
-  <span class="lead-duration duration">5.067</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -340,11 +359,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should create a survey</span>
 
-  <span class="lead-duration duration">0.060</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -371,7 +390,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -383,13 +402,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-6" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definition.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.720</span>
+  <span class="lead-duration duration">0.905</span>
 
           </div>
 
@@ -398,6 +417,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-7" class="collapsable-control">
+      <a>Verify that user can create a survey</a>
+      <a href="embeddings/embedding_1711506305.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-7" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1711506305.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
@@ -414,12 +448,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">16.431</span>
+  <span class="lead-duration duration">10.645</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">user is log on the home page</span>
 
@@ -430,16 +464,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-6" class="collapse collapsable-details ">
+  <div id="element-8" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -449,15 +483,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is on the surveys module page of web table app</span>
 
-  <span class="lead-duration duration">16.431</span>
+  <span class="lead-duration duration">10.645</span>
 
 </div>
 
@@ -465,6 +499,46 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+*** Element info: {Using=xpath, value=(//a[@class='oe_menu_toggler'])[11]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at com.cydeo.pages.CentrilliLogin.enterSurveys(CentrilliLogin.java:47)
+	at com.cydeo.step_definition.Centrilli_StepDefinition.user_is_on_the_surveys_module_page_of_web_table_app(Centrilli_StepDefinition.java:35)
+	at &#10045;.user is on the surveys module page of web table app(file:///C:/Users/erdem/OneDrive/Desktop/Project%20Centrilli/Centrilli-US-36-SurveysFunctionality/src/test/resources/features/surveysFunctionality.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -497,12 +571,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.287</span>
+  <span class="lead-duration duration">0.001</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify that user cannot create a survey without typing title (empty title)</span>
 
@@ -513,16 +587,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-8" class="collapse collapsable-details ">
+  <div id="element-11" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -532,15 +606,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details ">
+  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user click the Create Button</span>
 
-  <span class="lead-duration duration">5.061</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -563,11 +637,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user click the Save Button</span>
 
-  <span class="lead-duration duration">5.159</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -590,11 +664,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should not create a survey</span>
 
-  <span class="lead-duration duration">0.067</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -621,9 +695,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-13">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -633,17 +707,49 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-10" class="inner-level collapse collapsable-details ">
+    <div id="after-13" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definition.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.727</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+          <a>Error message</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.cydeo.step_definition.Hooks.teardownScenario(Hooks.java:39)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -664,12 +770,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">15.430</span>
+  <span class="lead-duration duration">0.017</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">user is log on the home page</span>
 
@@ -680,16 +786,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details ">
+  <div id="element-15" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-16">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -699,15 +805,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-12" class="inner-level collapse collapsable-details ">
+  <div id="steps-16" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is on the surveys module page of web table app</span>
 
-  <span class="lead-duration duration">15.430</span>
+  <span class="lead-duration duration">0.017</span>
 
 </div>
 
@@ -715,6 +821,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.cydeo.step_definition.Centrilli_StepDefinition.user_is_on_the_surveys_module_page_of_web_table_app(Centrilli_StepDefinition.java:30)
+	at &#10045;.user is on the surveys module page of web table app(file:///C:/Users/erdem/OneDrive/Desktop/Project%20Centrilli/Centrilli-US-36-SurveysFunctionality/src/test/resources/features/surveysFunctionality.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -747,12 +885,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.185</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-18">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify that user can cancel the process by clicking Discard button</span>
 
@@ -763,16 +901,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details ">
+  <div id="element-18" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -782,15 +920,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-14" class="inner-level collapse collapsable-details ">
+  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user click the Create Button</span>
 
-  <span class="lead-duration duration">5.076</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -813,11 +951,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user click the Discard Button</span>
 
-  <span class="lead-duration duration">5.079</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -840,11 +978,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should cancel the process</span>
 
-  <span class="lead-duration duration">0.029</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -871,9 +1009,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-20">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -883,17 +1021,49 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-15" class="inner-level collapse collapsable-details ">
+    <div id="after-20" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definition.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.646</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-21">
+          <a>Error message</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.cydeo.step_definition.Hooks.teardownScenario(Hooks.java:39)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -914,12 +1084,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">15.949</span>
+  <span class="lead-duration duration">0.006</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-22">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">user is log on the home page</span>
 
@@ -930,16 +1100,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-16" class="collapse collapsable-details ">
+  <div id="element-22" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-23">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -949,15 +1119,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details ">
+  <div id="steps-23" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is on the surveys module page of web table app</span>
 
-  <span class="lead-duration duration">15.949</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -965,6 +1135,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-24">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.cydeo.step_definition.Centrilli_StepDefinition.user_is_on_the_surveys_module_page_of_web_table_app(Centrilli_StepDefinition.java:30)
+	at &#10045;.user is on the surveys module page of web table app(file:///C:/Users/erdem/OneDrive/Desktop/Project%20Centrilli/Centrilli-US-36-SurveysFunctionality/src/test/resources/features/surveysFunctionality.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -997,12 +1199,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.287</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify that page title is changed to the new survey name after user create the survey</span>
 
@@ -1013,16 +1215,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-18" class="collapse collapsable-details ">
+  <div id="element-25" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-26">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1032,15 +1234,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-19" class="inner-level collapse collapsable-details ">
+  <div id="steps-26" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user click the Create Button</span>
 
-  <span class="lead-duration duration">5.060</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1063,11 +1265,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user write any <span class="argument">&quot;title&quot;</span> on Title label</span>
 
-  <span class="lead-duration duration">0.056</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1090,11 +1292,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user click the Save Button</span>
 
-  <span class="lead-duration duration">5.134</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1117,11 +1319,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see the page title is changed to the new survey name after user create the survey</span>
 
-  <span class="lead-duration duration">0.036</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1148,9 +1350,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-27">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1160,17 +1362,49 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-20" class="inner-level collapse collapsable-details ">
+    <div id="after-27" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definition.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.740</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
+          <a>Error message</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.cydeo.step_definition.Hooks.teardownScenario(Hooks.java:39)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1191,12 +1425,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">15.116</span>
+  <span class="lead-duration duration">0.008</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">user is log on the home page</span>
 
@@ -1207,16 +1441,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details ">
+  <div id="element-29" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-30">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1226,15 +1460,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-22" class="inner-level collapse collapsable-details ">
+  <div id="steps-30" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is on the surveys module page of web table app</span>
 
-  <span class="lead-duration duration">15.116</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -1242,6 +1476,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-31">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.cydeo.step_definition.Centrilli_StepDefinition.user_is_on_the_surveys_module_page_of_web_table_app(Centrilli_StepDefinition.java:30)
+	at &#10045;.user is on the surveys module page of web table app(file:///C:/Users/erdem/OneDrive/Desktop/Project%20Centrilli/Centrilli-US-36-SurveysFunctionality/src/test/resources/features/surveysFunctionality.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1274,12 +1540,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.307</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-32">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify that &ldquo;Survey created&rdquo; message is displayed at the bottom of the page (after creating a new survey).</span>
 
@@ -1290,16 +1556,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-23" class="collapse collapsable-details ">
+  <div id="element-32" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-33">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1309,15 +1575,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-24" class="inner-level collapse collapsable-details ">
+  <div id="steps-33" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user click the Create Button</span>
 
-  <span class="lead-duration duration">5.086</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1340,11 +1606,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user write any <span class="argument">&quot;title&quot;</span> on Title label</span>
 
-  <span class="lead-duration duration">0.056</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1367,11 +1633,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user click the Save Button</span>
 
-  <span class="lead-duration duration">5.127</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1394,11 +1660,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see Survey created message is displayed at the bottom of the page (after creating a new survey)</span>
 
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1425,9 +1691,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-25">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-34">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1437,17 +1703,49 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-25" class="inner-level collapse collapsable-details ">
+    <div id="after-34" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definition.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.653</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-35">
+          <a>Error message</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.cydeo.step_definition.Hooks.teardownScenario(Hooks.java:39)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1468,12 +1766,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">15.618</span>
+  <span class="lead-duration duration">0.020</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-36">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">user is log on the home page</span>
 
@@ -1484,16 +1782,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-26" class="collapse collapsable-details ">
+  <div id="element-36" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-37">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1503,15 +1801,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-27" class="inner-level collapse collapsable-details ">
+  <div id="steps-37" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is on the surveys module page of web table app</span>
 
-  <span class="lead-duration duration">15.618</span>
+  <span class="lead-duration duration">0.020</span>
 
 </div>
 
@@ -1519,6 +1817,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-38">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.cydeo.step_definition.Centrilli_StepDefinition.user_is_on_the_surveys_module_page_of_web_table_app(Centrilli_StepDefinition.java:30)
+	at &#10045;.user is on the surveys module page of web table app(file:///C:/Users/erdem/OneDrive/Desktop/Project%20Centrilli/Centrilli-US-36-SurveysFunctionality/src/test/resources/features/surveysFunctionality.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1551,12 +1881,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">24.633</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-28">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-39">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify that user can find the new created survey under permanent survey list by using search box.</span>
 
@@ -1567,16 +1897,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-28" class="collapse collapsable-details ">
+  <div id="element-39" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-40">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1586,15 +1916,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-29" class="inner-level collapse collapsable-details ">
+  <div id="steps-40" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user click the Create Button</span>
 
-  <span class="lead-duration duration">5.064</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1617,11 +1947,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user write any <span class="argument">&quot;title&quot;</span> on Title label</span>
 
-  <span class="lead-duration duration">0.061</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1644,11 +1974,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user click the Save Button</span>
 
-  <span class="lead-duration duration">5.143</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1671,11 +2001,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user click the List button</span>
 
-  <span class="lead-duration duration">11.183</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1698,11 +2028,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user write new created <span class="argument">&quot;title&quot;</span> under permanent survey list by using search box.</span>
 
-  <span class="lead-duration duration">3.134</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1725,11 +2055,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should find the new created survey</span>
 
-  <span class="lead-duration duration">0.044</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1756,9 +2086,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-30">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-41">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1768,17 +2098,49 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-30" class="inner-level collapse collapsable-details ">
+    <div id="after-41" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definition.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.712</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-42">
+          <a>Error message</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.cydeo.step_definition.Hooks.teardownScenario(Hooks.java:39)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1799,12 +2161,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">15.416</span>
+  <span class="lead-duration duration">0.013</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-43">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">user is log on the home page</span>
 
@@ -1815,16 +2177,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-31" class="collapse collapsable-details ">
+  <div id="element-43" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-44">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1834,15 +2196,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-32" class="inner-level collapse collapsable-details ">
+  <div id="steps-44" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is on the surveys module page of web table app</span>
 
-  <span class="lead-duration duration">15.416</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -1850,6 +2212,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-45">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.cydeo.step_definition.Centrilli_StepDefinition.user_is_on_the_surveys_module_page_of_web_table_app(Centrilli_StepDefinition.java:30)
+	at &#10045;.user is on the surveys module page of web table app(file:///C:/Users/erdem/OneDrive/Desktop/Project%20Centrilli/Centrilli-US-36-SurveysFunctionality/src/test/resources/features/surveysFunctionality.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1882,12 +2276,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.177</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-46">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify that user can change surveys display to Kanban</span>
 
@@ -1898,16 +2292,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-33" class="collapse collapsable-details ">
+  <div id="element-46" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-47">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1917,15 +2311,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-34" class="inner-level collapse collapsable-details ">
+  <div id="steps-47" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user click the Kanban button</span>
 
-  <span class="lead-duration duration">4.119</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1948,11 +2342,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see the data like as Kanban type</span>
 
-  <span class="lead-duration duration">0.057</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1979,9 +2373,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-35">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-48">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1991,17 +2385,49 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-35" class="inner-level collapse collapsable-details ">
+    <div id="after-48" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definition.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.635</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-49">
+          <a>Error message</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.cydeo.step_definition.Hooks.teardownScenario(Hooks.java:39)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2022,12 +2448,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">14.880</span>
+  <span class="lead-duration duration">0.026</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-36">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-50">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">user is log on the home page</span>
 
@@ -2038,16 +2464,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-36" class="collapse collapsable-details ">
+  <div id="element-50" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-37">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-51">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2057,15 +2483,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-37" class="inner-level collapse collapsable-details ">
+  <div id="steps-51" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is on the surveys module page of web table app</span>
 
-  <span class="lead-duration duration">14.880</span>
+  <span class="lead-duration duration">0.026</span>
 
 </div>
 
@@ -2073,6 +2499,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-52">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.cydeo.step_definition.Centrilli_StepDefinition.user_is_on_the_surveys_module_page_of_web_table_app(Centrilli_StepDefinition.java:30)
+	at &#10045;.user is on the surveys module page of web table app(file:///C:/Users/erdem/OneDrive/Desktop/Project%20Centrilli/Centrilli-US-36-SurveysFunctionality/src/test/resources/features/surveysFunctionality.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2105,12 +2563,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">11.209</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-53">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify that user can change surveys display to List</span>
 
@@ -2121,16 +2579,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-38" class="collapse collapsable-details ">
+  <div id="element-53" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-54">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2140,15 +2598,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-39" class="inner-level collapse collapsable-details ">
+  <div id="steps-54" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user click the List button</span>
 
-  <span class="lead-duration duration">11.173</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2171,11 +2629,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see the data like as List type</span>
 
-  <span class="lead-duration duration">0.036</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2202,9 +2660,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-40">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-55">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2214,17 +2672,49 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-40" class="inner-level collapse collapsable-details ">
+    <div id="after-55" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definition.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.693</span>
+  <span class="lead-duration duration">0.006</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-56">
+          <a>Error message</a>
+      </div>
+      <div id="msg-56" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.cydeo.step_definition.Hooks.teardownScenario(Hooks.java:39)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2245,12 +2735,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">16.720</span>
+  <span class="lead-duration duration">0.021</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-57">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">user is log on the home page</span>
 
@@ -2261,16 +2751,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-41" class="collapse collapsable-details ">
+  <div id="element-57" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-42">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-58">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2280,15 +2770,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-42" class="inner-level collapse collapsable-details ">
+  <div id="steps-58" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">user is on the surveys module page of web table app</span>
 
-  <span class="lead-duration duration">16.720</span>
+  <span class="lead-duration duration">0.021</span>
 
 </div>
 
@@ -2296,6 +2786,38 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-59">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-59" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.cydeo.step_definition.Centrilli_StepDefinition.user_is_on_the_surveys_module_page_of_web_table_app(Centrilli_StepDefinition.java:30)
+	at &#10045;.user is on the surveys module page of web table app(file:///C:/Users/erdem/OneDrive/Desktop/Project%20Centrilli/Centrilli-US-36-SurveysFunctionality/src/test/resources/features/surveysFunctionality.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2328,12 +2850,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">31.613</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-60">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify that the number of surveys increased 1</span>
 
@@ -2344,16 +2866,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-43" class="collapse collapsable-details ">
+  <div id="element-60" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-61">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2363,15 +2885,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-44" class="inner-level collapse collapsable-details ">
+  <div id="steps-61" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">user click the List button</span>
 
-  <span class="lead-duration duration">11.181</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2394,11 +2916,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user click the Create Button</span>
 
-  <span class="lead-duration duration">5.068</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2421,11 +2943,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user write any <span class="argument">&quot;title&quot;</span> on Title label</span>
 
-  <span class="lead-duration duration">0.066</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2448,11 +2970,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user click the Save Button</span>
 
-  <span class="lead-duration duration">5.119</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2475,11 +2997,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should see the number of surveys increased 1</span>
 
-  <span class="lead-duration duration">10.176</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2506,9 +3028,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-45">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-62">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2518,17 +3040,49 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-45" class="inner-level collapse collapsable-details ">
+    <div id="after-62" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.cydeo.step_definition.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.660</span>
+  <span class="lead-duration duration">0.005</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-63">
+          <a>Error message</a>
+      </div>
+      <div id="msg-63" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ERGUL', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\erdem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 006450d0027a2944f6c0a3eddff76919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.cydeo.step_definition.Hooks.teardownScenario(Hooks.java:39)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
