@@ -173,7 +173,7 @@ public class Centrilli_StepDefinition {
         expect3=false;
         Assert.assertTrue(expect3);
 
-        Thread.sleep(3500);
+        Thread.sleep(7000);
 
     }
 }
