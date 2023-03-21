@@ -21,6 +21,7 @@ public class Centrilli_StepDefinition {
     CentrilliSurveysPage surveys=new CentrilliSurveysPage();
     private int limit;
     WebElement waitwrite= surveys.write;
+    WebElement waitList= surveys.list;
     @Given("user is on the surveys module page of web table app")
     public void user_is_on_the_surveys_module_page_of_web_table_app() throws InterruptedException {
         Driver.getDriver().get(ConfigurationReader.getProperty("centrilli.url"));
@@ -112,12 +113,15 @@ public class Centrilli_StepDefinition {
 
     @When("user click the List button")
     public void user_click_the_list_button() throws InterruptedException {
-        login.enterSurveys();
-        Thread.sleep(7000);
-
+        surveys.listcheck.click();
+        wait.until(ExpectedConditions.visibilityOf(waitList));
         surveys.list.click();
-        Thread.sleep(4000);
-        String lim=surveys.pagerLimit.getText();
+        Thread.sleep(2000);
+        surveys.list.click();
+        wait.until(ExpectedConditions.visibilityOf(waitList));
+        Thread.sleep(2000);
+        String lim=surveys.pagerLimit.getText().toString();
+        Thread.sleep(2000);
         limit=Integer.parseInt(lim);
 
 
@@ -161,9 +165,10 @@ public class Centrilli_StepDefinition {
 
 
     @Then("user should see the data like as List type")
-    public void user_should_see_the_data_like_as_list_type() {
+    public void user_should_see_the_data_like_as_list_type() throws InterruptedException {
         boolean actual=surveys.pagerLimit.isDisplayed();
         Assert.assertTrue(actual);
+        Thread.sleep(3500);
     }
 
 
@@ -174,8 +179,8 @@ public class Centrilli_StepDefinition {
     @Then("user should see the number of surveys increased 1")
     public void user_should_see_the_number_of_surveys_increased() throws InterruptedException {
 
-        login.enterSurveys();
-        Thread.sleep(7000);
+        surveys.listcheck.click();
+        wait.until(ExpectedConditions.visibilityOf(waitList));
         surveys.list.click();
         Thread.sleep(3000);
         String lim=surveys.pagerLimit.getText().toString();
@@ -189,7 +194,7 @@ public class Centrilli_StepDefinition {
           expect3=false;
       Assert.assertTrue(expect3);
 
-
+Thread.sleep(3500);
 
 
 

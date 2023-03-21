@@ -32,6 +32,9 @@ public class CentrilliSurveysPage {
     public WebElement kanban;
     @FindBy(xpath = "//button[@accesskey='l']")
     public WebElement list;
+    @FindBy(xpath = "//a[@data-action-id='641']/span")
+    public WebElement listcheck;
+
     @FindBy(xpath = "//div[@class='o_thread_message_content']//p")
     public WebElement message;
     @FindBy(xpath = "(//td[@class='o_data_cell o_required_modifier'])[1]")
