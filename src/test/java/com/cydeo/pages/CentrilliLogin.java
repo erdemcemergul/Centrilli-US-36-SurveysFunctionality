@@ -56,7 +56,7 @@ public class CentrilliLogin {
             dropdownsmall.click();
             Thread.sleep(1500);
             dropdown.click();
-        Thread.sleep(1500);
-        module.click();}
+            Thread.sleep(1500);
+            module.click();}
         }
     }

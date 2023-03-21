@@ -2,6 +2,7 @@ package com.cydeo.step_definition;
 
 import com.cydeo.pages.CentrilliLogin;
 import com.cydeo.pages.CentrilliSurveysPage;
+import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.*;
@@ -19,7 +20,7 @@ public class Centrilli_StepDefinition {
 
     CentrilliLogin login=new CentrilliLogin();
     CentrilliSurveysPage surveys=new CentrilliSurveysPage();
-    private int limit;
+    public int limit;
     WebElement waitwrite= surveys.write;
     WebElement waitList= surveys.list;
     
@@ -34,7 +35,6 @@ public class Centrilli_StepDefinition {
     }
     @When("user click the Create Button")
     public void user_click_the_create_button() throws InterruptedException {
-
         surveys.createSurvey();
         Thread.sleep(5000);
     }
@@ -42,16 +42,15 @@ public class Centrilli_StepDefinition {
     @When("user write any {string} on Title label")
     public void user_write_any_on_title_label(String string) throws InterruptedException {
         surveys.write.click();
-        wait.until(ExpectedConditions.visibilityOf(waitwrite));
+        BrowserUtils.waitForVisibility(waitwrite,30);
         surveys.write.clear();
-        wait.until(ExpectedConditions.visibilityOf(waitwrite));
-   surveys.write.sendKeys(string);
-   expect =string;
+        BrowserUtils.waitForVisibility(waitwrite,30);
+        surveys.write.sendKeys(string);
+        expect =string;
     }
     
     @When("user click the Save Button")
     public void user_click_the_save_button() throws InterruptedException {
-       // WebElement waitwrite= surveys.write;
         wait.until(ExpectedConditions.visibilityOf(waitwrite));
         expect2=surveys.write.getAttribute("class");
         surveys.saveSurvey();
@@ -66,9 +65,10 @@ public class Centrilli_StepDefinition {
     
     @Then("user should not create a survey")
     public void user_should_not_create_a_survey() {
-        wait.until(ExpectedConditions.visibilityOf(waitwrite));
-     String actual=surveys.write.getAttribute("class");
-     Assert.assertNotEquals(expect2,actual);
+        //wait.until(ExpectedConditions.visibilityOf(waitwrite));
+        BrowserUtils.waitForVisibility(waitwrite,30);
+        String actual=surveys.write.getAttribute("class");
+        Assert.assertNotEquals(expect2,actual);
     }
 
     @When("user click the Discard Button")
@@ -79,14 +79,14 @@ public class Centrilli_StepDefinition {
     
     @Then("user should cancel the process")
     public void user_should_cancel_the_process() {
-      boolean actual=surveys.create.isEnabled();
-      Assert.assertTrue(actual);
+        boolean actual=surveys.create.isEnabled();
+        Assert.assertTrue(actual);
     }
 
     @When("user click the Edit Button")
     public void user_click_the_edit_button() throws InterruptedException {
-    surveys.editSurvey();
-    Thread.sleep(3000);
+        surveys.editSurvey();
+        Thread.sleep(3000);
     }
 
     @Then("user should see the page title is changed to the new survey name after user create the survey")
@@ -105,11 +105,12 @@ public class Centrilli_StepDefinition {
     @When("user click the List button")
     public void user_click_the_list_button() throws InterruptedException {
         surveys.listcheck.click();
-        wait.until(ExpectedConditions.visibilityOf(waitList));
+        BrowserUtils.waitForVisibility(waitList,30);
+        //wait.until(ExpectedConditions.visibilityOf(waitList));
         surveys.list.click();
         Thread.sleep(2000);
         surveys.list.click();
-        wait.until(ExpectedConditions.visibilityOf(waitList));
+        BrowserUtils.waitForVisibility(waitList,30);
         Thread.sleep(2000);
         String lim=surveys.pagerLimit.getText().toString();
         Thread.sleep(2000);
@@ -128,8 +129,8 @@ public class Centrilli_StepDefinition {
     
     @Then("user should find the new created survey")
     public void user_should_find_the_new_created_survey() {
-    String actual=surveys.searchSurvey.getText();
-    Assert.assertEquals(expect,actual);
+        String actual=surveys.searchSurvey.getText();
+        Assert.assertEquals(expect,actual);
     }
 
     @When("user click the Kanban button")
@@ -158,21 +159,21 @@ public class Centrilli_StepDefinition {
     public void user_should_see_the_number_of_surveys_increased() throws InterruptedException {
 
         surveys.listcheck.click();
-        wait.until(ExpectedConditions.visibilityOf(waitList));
+        BrowserUtils.waitForVisibility(waitList,30);
         surveys.list.click();
         Thread.sleep(3000);
         String lim=surveys.pagerLimit.getText().toString();
-      int  actuallimit=0;
-      actuallimit=Integer.parseInt(lim);
-         int oldlimit= 0;
-      oldlimit=limit+1;
+        int  actuallimit=0;
+        actuallimit=Integer.parseInt(lim);
+        int oldlimit= 0;
+        oldlimit=limit+1;
       if (oldlimit == actuallimit)
-      expect3=true;
+        expect3=true;
       else
-          expect3=false;
-      Assert.assertTrue(expect3);
+        expect3=false;
+        Assert.assertTrue(expect3);
 
-Thread.sleep(3500);
+        Thread.sleep(3500);
 
-}
+    }
 }
