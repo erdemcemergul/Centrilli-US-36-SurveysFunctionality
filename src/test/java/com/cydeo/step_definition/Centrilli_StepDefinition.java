@@ -22,16 +22,14 @@ public class Centrilli_StepDefinition {
     private int limit;
     WebElement waitwrite= surveys.write;
     WebElement waitList= surveys.list;
+    
     @Given("user is on the surveys module page of web table app")
     public void user_is_on_the_surveys_module_page_of_web_table_app() throws InterruptedException {
         Driver.getDriver().get(ConfigurationReader.getProperty("centrilli.url"));
         login.loginWithConfig();
-       Thread.sleep(5000);
-
-       // driverPool.get().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        Thread.sleep(5000);
         login.enterSurveys();
         Thread.sleep(4000);
-
 
     }
     @When("user click the Create Button")
@@ -40,6 +38,7 @@ public class Centrilli_StepDefinition {
         surveys.createSurvey();
         Thread.sleep(5000);
     }
+    
     @When("user write any {string} on Title label")
     public void user_write_any_on_title_label(String string) throws InterruptedException {
         surveys.write.click();
@@ -49,6 +48,7 @@ public class Centrilli_StepDefinition {
    surveys.write.sendKeys(string);
    expect =string;
     }
+    
     @When("user click the Save Button")
     public void user_click_the_save_button() throws InterruptedException {
        // WebElement waitwrite= surveys.write;
@@ -57,36 +57,31 @@ public class Centrilli_StepDefinition {
         surveys.saveSurvey();
         Thread.sleep(5000);
     }
+    
     @Then("user should create a survey")
     public void user_should_create_a_survey() {
         boolean actual=surveys.edit.isDisplayed();
         Assert.assertTrue(actual);
     }
-
+    
     @Then("user should not create a survey")
     public void user_should_not_create_a_survey() {
-       // WebElement waitwrite= surveys.write;
         wait.until(ExpectedConditions.visibilityOf(waitwrite));
-        //WebElement input = driver.findElement(By.xpath("//form[@id='input-example']/input"));
-
      String actual=surveys.write.getAttribute("class");
      Assert.assertNotEquals(expect2,actual);
     }
 
-
     @When("user click the Discard Button")
     public void user_click_the_discard_button() throws InterruptedException {
-     //   expect3=surveys.create.isDisplayed();
         surveys.discardSurvey();
         Thread.sleep(5000);
     }
+    
     @Then("user should cancel the process")
     public void user_should_cancel_the_process() {
       boolean actual=surveys.create.isEnabled();
       Assert.assertTrue(actual);
     }
-
-
 
     @When("user click the Edit Button")
     public void user_click_the_edit_button() throws InterruptedException {
@@ -100,16 +95,12 @@ public class Centrilli_StepDefinition {
         Assert.assertEquals(expect,actual);
     }
 
-
-
-
     @Then("user should see Survey created message is displayed at the bottom of the page \\(after creating a new survey)")
     public void user_should_see_survey_created_message_is_displayed_at_the_bottom_of_the_page_after_creating_a_new_survey() {
         String expect="Survey created";
         String actual=surveys.message.getText();
         Assert.assertEquals(expect,actual);
     }
-
 
     @When("user click the List button")
     public void user_click_the_list_button() throws InterruptedException {
@@ -124,8 +115,8 @@ public class Centrilli_StepDefinition {
         Thread.sleep(2000);
         limit=Integer.parseInt(lim);
 
-
     }
+    
     @When("user write new created {string} under permanent survey list by using search box.")
     public void user_write_new_created_under_permanent_survey_list_by_using_search_box(String string) throws InterruptedException {
 
@@ -134,15 +125,12 @@ public class Centrilli_StepDefinition {
         Thread.sleep(3000);
 
     }
+    
     @Then("user should find the new created survey")
     public void user_should_find_the_new_created_survey() {
     String actual=surveys.searchSurvey.getText();
     Assert.assertEquals(expect,actual);
     }
-
-
-
-
 
     @When("user click the Kanban button")
     public void user_click_the_kanban_button() throws InterruptedException {
@@ -151,18 +139,13 @@ public class Centrilli_StepDefinition {
         surveys.Permanent.click();
         Thread.sleep(4000);
 
-
-
     }
+    
     @Then("user should see the data like as Kanban type")
     public void user_should_see_the_data_like_as_kanban_type() {
         boolean actual=surveys.openPermanent.isDisplayed();
         Assert.assertTrue(actual);
     }
-
-
-
-
 
     @Then("user should see the data like as List type")
     public void user_should_see_the_data_like_as_list_type() throws InterruptedException {
@@ -170,11 +153,6 @@ public class Centrilli_StepDefinition {
         Assert.assertTrue(actual);
         Thread.sleep(3500);
     }
-
-
-
-
-
 
     @Then("user should see the number of surveys increased 1")
     public void user_should_see_the_number_of_surveys_increased() throws InterruptedException {
@@ -196,6 +174,5 @@ public class Centrilli_StepDefinition {
 
 Thread.sleep(3500);
 
-
-
-}}
+}
+}
